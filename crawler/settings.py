@@ -12,11 +12,6 @@ BOT_NAME = 'crawler'
 SPIDER_MODULES = ['crawler.spiders']
 NEWSPIDER_MODULE = 'crawler.spiders'
 
-SELENIUM_DRIVER_NAME = 'chrome'
-SELENIUM_DRIVER_EXECUTABLE_PATH = '/Users/tamto/Documents/chromedriver'
-SELENIUM_DRIVER_ARGUMENTS = ['--headless']
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'crawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
@@ -54,8 +49,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'crawler.middlewares.CrawlerDownloaderMiddleware': 543,
-    'scrapy_selenium.SeleniumMiddleware': 800
+   'crawler.middlewares.CrawlerDownloaderMiddleware': 543
 }
 
 # Enable or disable extensions
